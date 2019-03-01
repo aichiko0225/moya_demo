@@ -1,6 +1,0 @@
-framework module Pods_moya_demo {
-  umbrella header "Pods-moya_demo-umbrella.h"
-
-  export *
-  module * { export * }
-}
