@@ -13,6 +13,9 @@
 		5E039D182227C8C3001229D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E039D162227C8C3001229D2 /* Main.storyboard */; };
 		5E039D1A2227C8C4001229D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E039D192227C8C4001229D2 /* Assets.xcassets */; };
 		5E039D1D2227C8C4001229D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E039D1B2227C8C4001229D2 /* LaunchScreen.storyboard */; };
+		5E039D26222A5FD2001229D2 /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E039D25222A5FD2001229D2 /* Response+ObjectMapper.swift */; };
+		5E039D29222A7468001229D2 /* ObservableType+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E039D28222A7468001229D2 /* ObservableType+ObjectMapper.swift */; };
+		5E039D2B222A7A03001229D2 /* Single+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E039D2A222A7A03001229D2 /* Single+ObjectMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		5E039D192227C8C4001229D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E039D1C2227C8C4001229D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E039D1E2227C8C4001229D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E039D25222A5FD2001229D2 /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
+		5E039D28222A7468001229D2 /* ObservableType+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+ObjectMapper.swift"; sourceTree = "<group>"; };
+		5E039D2A222A7A03001229D2 /* Single+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Single+ObjectMapper.swift"; sourceTree = "<group>"; };
 		BBB940FAAB684BB7BFEB5675 /* Pods_moya_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moya_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD38CE9BF343C426AE655BFD /* Pods-moya_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moya_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moya_demo/Pods-moya_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		F9AFCB938C4C9EAE5418E7D1 /* Pods-moya_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moya_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-moya_demo/Pods-moya_demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 		5E039D112227C8C3001229D2 /* moya_demo */ = {
 			isa = PBXGroup;
 			children = (
+				5E039D24222A5FBE001229D2 /* Source */,
 				5E039D122227C8C3001229D2 /* AppDelegate.swift */,
 				5E039D142227C8C3001229D2 /* ViewController.swift */,
 				5E039D162227C8C3001229D2 /* Main.storyboard */,
@@ -78,6 +85,24 @@
 				5E039D1E2227C8C4001229D2 /* Info.plist */,
 			);
 			path = moya_demo;
+			sourceTree = "<group>";
+		};
+		5E039D24222A5FBE001229D2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5E039D27222A7459001229D2 /* RxSwift */,
+				5E039D25222A5FD2001229D2 /* Response+ObjectMapper.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		5E039D27222A7459001229D2 /* RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				5E039D28222A7468001229D2 /* ObservableType+ObjectMapper.swift */,
+				5E039D2A222A7A03001229D2 /* Single+ObjectMapper.swift */,
+			);
+			path = RxSwift;
 			sourceTree = "<group>";
 		};
 		E1D2C4A1474FB8FC7A0F00B3 /* Frameworks */ = {
@@ -166,6 +191,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-moya_demo/Pods-moya_demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -174,6 +200,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -209,7 +236,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E039D152227C8C3001229D2 /* ViewController.swift in Sources */,
+				5E039D2B222A7A03001229D2 /* Single+ObjectMapper.swift in Sources */,
 				5E039D132227C8C3001229D2 /* AppDelegate.swift in Sources */,
+				5E039D29222A7468001229D2 /* ObservableType+ObjectMapper.swift in Sources */,
+				5E039D26222A5FD2001229D2 /* Response+ObjectMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

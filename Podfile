@@ -8,4 +8,6 @@ pod 'Moya', '~> 12.0'
 # or 
 pod 'Moya/RxSwift', '~> 12.0'
 
+pod 'ObjectMapper', '~> 3.4'
+
 end
